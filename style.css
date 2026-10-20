@@ -706,3 +706,49 @@ button:hover,
   transform: translateY(-2px);
   box-shadow: 0 0 22px rgba(80, 230, 255, 0.65);
 }
+/* ===== MEMPERJELAS TULISAN KARTU SISWA ===== */
+
+.student-card,
+.student-card * {
+  color: #ffffff !important;
+}
+
+/* Nama lengkap dan nama panggilan */
+.student-card h3,
+.student-card h4,
+.student-card p,
+.student-card span,
+.student-card strong,
+.student-card small {
+  color: #ffffff !important;
+  text-shadow: 0 1px 5px rgba(0, 15, 35, 0.8) !important;
+}
+
+/* Nomor absen dan panah */
+.student-card .number,
+.student-card .student-number,
+.student-card .arrow {
+  color: #65efff !important;
+}
+
+/* Kartu dibuat sedikit lebih gelap */
+.student-card {
+  background: rgba(0, 35, 75, 0.94) !important;
+  border: 1px solid rgba(100, 235, 255, 0.85) !important;
+}
+
+/* Nama siswa tetap terbaca di HP */
+@media (max-width: 768px) {
+  .student-card,
+  .student-card * {
+    opacity: 1 !important;
+  }
+
+  .student-card h3,
+  .student-card h4,
+  .student-card p,
+  .student-card span,
+  .student-card strong {
+    color: #ffffff !important;
+  }
+}
