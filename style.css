@@ -752,3 +752,277 @@ button:hover,
     color: #ffffff !important;
   }
 }
+
+/* ==========================================
+   OCEAN UI UPGRADE — CLASS 8A
+   ========================================== */
+
+/* 1. Tombol utama website */
+.btn {
+  border-radius: 18px;
+  font-weight: 800;
+  border: 1px solid rgba(130, 245, 255, 0.85);
+  transition: transform .25s ease, box-shadow .25s ease;
+  box-shadow: 0 6px 20px rgba(0, 180, 255, 0.22);
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #08c9ec, #0877cf);
+  color: #ffffff;
+}
+
+.btn.ghost {
+  background: rgba(235, 251, 255, 0.94);
+  color: #064d79;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 24px rgba(70, 225, 255, 0.6);
+}
+
+/* 2. Kotak pencarian siswa */
+.search-wrap {
+  background: rgba(239, 251, 255, 0.96);
+  border: 2px solid rgba(103, 231, 255, 0.9);
+  border-radius: 22px;
+  box-shadow: 0 8px 28px rgba(0, 35, 80, 0.24);
+}
+
+.search-wrap span {
+  color: #087fa8;
+}
+
+.search-wrap input {
+  color: #073858;
+  font-size: 16px;
+}
+
+.search-wrap input::placeholder {
+  color: #526f80;
+  opacity: 1;
+}
+
+/* 3. Kartu nama siswa */
+.student-card {
+  position: relative;
+  overflow: hidden;
+  gap: 14px;
+  padding: 17px 15px;
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 66, 112, 0.96),
+    rgba(0, 42, 82, 0.94)
+  );
+  border: 1px solid rgba(103, 231, 255, 0.8);
+  box-shadow: 0 8px 22px rgba(0, 25, 65, 0.2);
+  color: #ffffff;
+  text-align: left;
+}
+
+.student-card::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  right: -35px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(75, 226, 255, 0.09);
+  pointer-events: none;
+}
+
+.student-card:hover {
+  transform: translateY(-4px);
+  border-color: #a5f7ff;
+  box-shadow: 0 0 24px rgba(40, 210, 255, 0.35);
+}
+
+/* Nomor absen */
+.student-no {
+  color: #78f1ff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* Avatar inisial siswa */
+.student-avatar {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border: 2px solid rgba(170, 247, 255, 0.85);
+  background: linear-gradient(145deg, #23d9ef, #0875ca);
+  color: #ffffff;
+  font-size: 19px;
+  box-shadow: 0 0 16px rgba(0, 205, 255, 0.28);
+}
+
+/* Nama panggilan dan nama lengkap */
+.student-info {
+  position: relative;
+  z-index: 1;
+}
+
+.student-info strong {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.student-info small {
+  color: #d4f2ff;
+  font-size: 11px;
+}
+
+.arrow {
+  color: #7cf2ff;
+  font-size: 23px;
+  transition: transform .2s ease;
+}
+
+.student-card:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* 4. Kartu Class Memories */
+.hero-card {
+  background: linear-gradient(
+    145deg,
+    rgba(0, 66, 112, 0.96),
+    rgba(0, 35, 76, 0.96)
+  );
+  border: 1px solid rgba(105, 236, 255, 0.8);
+  box-shadow: 0 0 30px rgba(0, 190, 255, 0.22);
+}
+
+.hero-card .seal {
+  color: #ffffff;
+  border-color: #6ceeff;
+}
+
+.hero-card p,
+.hero-card h3,
+.hero-card span {
+  color: #ffffff;
+}
+
+/* 5. Kartu informasi dan visi-misi */
+.paper-card,
+.vision-card,
+.org-node {
+  background: rgba(0, 53, 92, 0.94);
+  color: #ffffff;
+  border: 1px solid rgba(105, 231, 255, 0.65);
+  box-shadow: 0 8px 24px rgba(0, 25, 65, 0.22);
+}
+
+.paper-card h3,
+.paper-card p,
+.vision-card p,
+.vision-card small,
+.org-node,
+.org-node strong {
+  color: #ffffff;
+}
+
+.paper-card .number {
+  color: #7af1ff;
+}
+
+/* 6. Kartu galeri */
+.gallery-item {
+  overflow: hidden;
+  border: 1px solid rgba(105, 231, 255, 0.75);
+  border-radius: 20px;
+  box-shadow: 0 10px 26px rgba(0, 25, 65, 0.3);
+}
+
+.gallery-item img {
+  transition: transform .4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-item figcaption {
+  background: rgba(0, 36, 70, 0.94);
+  color: #ffffff;
+}
+
+.gallery-item figcaption strong,
+.gallery-item figcaption span {
+  color: #ffffff;
+}
+
+/* 7. Biodata siswa */
+.modal-box {
+  background: linear-gradient(
+    145deg,
+    #064c79,
+    #022b52
+  );
+  color: #ffffff;
+  border: 1px solid #79efff;
+  box-shadow: 0 0 35px rgba(0, 200, 255, 0.25);
+  border-radius: 24px;
+}
+
+.modal-box h2,
+.modal-box p {
+  color: #ffffff;
+}
+
+.modal-avatar {
+  background: linear-gradient(145deg, #25d9ef, #0875ca);
+  color: #ffffff;
+  border: 2px solid #a1f5ff;
+}
+
+/* 8. Penyesuaian layar HP */
+@media (max-width: 768px) {
+  .student-grid {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .student-card {
+    min-height: 98px;
+    padding: 16px 13px;
+    gap: 12px;
+  }
+
+  .student-avatar {
+    flex-basis: 46px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .student-info strong {
+    font-size: 15px;
+  }
+
+  .student-info small {
+    font-size: 12px;
+  }
+
+  .btn {
+    min-height: 48px;
+    padding: 12px 17px;
+  }
+
+  .hero-card {
+    max-width: 100%;
+  }
+}
+
+/* Kurangi animasi jika pengguna memilihnya */
+@media (prefers-reduced-motion: reduce) {
+  .student-card,
+  .btn,
+  .gallery-item img,
+  .arrow {
+    transition: none;
+  }
+}
