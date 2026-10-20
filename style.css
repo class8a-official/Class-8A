@@ -1264,3 +1264,59 @@ a {
     letter-spacing: 1px;
   }
 }
+/* ===== PERBAIKI QUICK STATS (20 • 8A • ∞) ===== */
+
+.quick-stats{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:28px;
+}
+
+.quick-stats div{
+  flex:1;
+  text-align:center;
+  background:rgba(0,42,78,.78);
+  border:1px solid rgba(110,238,255,.8);
+  border-radius:18px;
+  padding:14px 8px;
+  backdrop-filter:blur(8px);
+}
+
+.quick-stats strong{
+  display:block;
+  font-family:Cinzel,serif;
+  font-size:34px;
+  color:#8ff6ff !important;
+  text-shadow:0 0 15px rgba(120,240,255,.8);
+}
+
+.quick-stats span{
+  display:block;
+  margin-top:4px;
+  color:#ffffff !important;
+  font-size:12px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+/* HP */
+@media (max-width:768px){
+  .quick-stats{
+    gap:8px;
+  }
+
+  .quick-stats div{
+    padding:12px 6px;
+    border-radius:14px;
+  }
+
+  .quick-stats strong{
+    font-size:28px;
+  }
+
+  .quick-stats span{
+    font-size:10px;
+    letter-spacing:1px;
+  }
+}
