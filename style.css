@@ -608,3 +608,49 @@ button:hover,
     background-attachment: scroll;
   }
 }
+
+/* ===== TULISAN TEMA LAUT ===== */
+
+.eyebrow {
+  color: #8af6ff;
+  text-shadow: 0 0 12px rgba(0, 220, 255, 0.8);
+}
+
+.hero h1 {
+  color: #ffffff;
+  text-shadow: 0 3px 14px rgba(0, 20, 55, 0.8);
+}
+
+.hero h1 span {
+  color: #54eaff;
+}
+
+.hero h2,
+.hero p,
+.hero .hero-subtitle {
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 20, 55, 0.9);
+}
+
+/* Kartu bertema kaca laut */
+.hero-card,
+.card {
+  background: rgba(0, 55, 100, 0.78);
+  border: 1px solid rgba(100, 235, 255, 0.65);
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.22);
+}
+
+/* Tombol bercahaya */
+button,
+.btn {
+  background: linear-gradient(135deg, #08d8f5, #0879d9);
+  color: #ffffff;
+  border: 1px solid #8af6ff;
+  border-radius: 18px;
+  box-shadow: 0 5px 18px rgba(0, 190, 255, 0.3);
+}
+
+button:hover,
+.btn:hover {
+  box-shadow: 0 0 24px rgba(0, 220, 255, 0.7);
+}
