@@ -654,3 +654,55 @@ button:hover,
 .btn:hover {
   box-shadow: 0 0 24px rgba(0, 220, 255, 0.7);
 }
+
+/* ===== PERBAIKAN KONTRAS TEMA LAUT ===== */
+
+/* Statistik siswa */
+.hero .stat,
+.hero .stat strong,
+.hero .stat span,
+.hero .stats,
+.hero .stats strong,
+.hero .stats span {
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 25, 65, 0.9);
+}
+
+/* Kartu Class Memories */
+.hero-card,
+.memory-card {
+  background: rgba(0, 45, 85, 0.78);
+  border: 1px solid rgba(105, 235, 255, 0.8);
+  box-shadow: 0 0 25px rgba(0, 210, 255, 0.25);
+}
+
+.hero-card h2,
+.hero-card h3,
+.hero-card p,
+.memory-card h2,
+.memory-card h3,
+.memory-card p {
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 20, 55, 0.8);
+}
+
+/* Lapisan laut sedikit lebih gelap agar teks jelas */
+.bg-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 30, 65, 0.35),
+    rgba(0, 25, 60, 0.55)
+  );
+}
+
+/* Tombol lebih halus */
+button,
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 22px rgba(80, 230, 255, 0.65);
+}
