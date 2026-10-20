@@ -156,3 +156,352 @@ footer span{font-size:10px;color:#9f8974}
   color:#fff;
   font-size:15px;
 }
+
+/* =====================================
+   CLASS 8A — OCEAN THEME 🌊
+   Foto latar belakang tetap dipertahankan
+===================================== */
+
+:root {
+  --brown: #07558a;
+  --brown2: #087ca5;
+  --cream: #e8faff;
+  --paper: #f3fcff;
+  --gold: #55d9f2;
+  --dark: #062b49;
+  --muted: #376b86;
+  --line: #8eddf0;
+  --shadow: 0 20px 50px rgba(0, 45, 90, .22);
+}
+
+/* Lapisan warna laut — background.jpg tetap sama */
+body {
+  color: var(--dark);
+  background-color: #d9f6ff;
+}
+
+.bg-overlay {
+  background: rgba(0, 100, 170, .34);
+}
+
+/* Pola gelembung kecil */
+body:before {
+  opacity: .24;
+  background-image:
+    radial-gradient(circle, #a8f3ff 1px, transparent 1.8px),
+    radial-gradient(circle, #ffffff 1px, transparent 2px);
+  background-size: 42px 42px, 67px 67px;
+  background-position: 0 0, 18px 23px;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(3, 39, 83, .93);
+  border-bottom-color: rgba(122, 235, 255, .45);
+}
+
+.brand-mark {
+  border-color: #71e5ff;
+  color: #b5f5ff;
+}
+
+nav a {
+  color: #e6faff;
+}
+
+nav a:hover {
+  background: #087ca5;
+}
+
+/* Judul dan teks utama */
+.eyebrow,
+.hero-card p {
+  color: #087da8;
+}
+
+.hero h1 {
+  color: #064b80;
+  text-shadow: 3px 4px 0 #b5efff;
+}
+
+.hero h1 span {
+  color: #0a91bd;
+}
+
+.hero-subtitle {
+  color: #073e66;
+}
+
+.hero-text {
+  color: #275b78;
+}
+
+/* Tombol */
+.btn.primary {
+  background: linear-gradient(135deg, #07558a, #087fa9);
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 91, 145, .25);
+}
+
+.btn.primary:hover {
+  background: #043b68;
+}
+
+.btn.ghost {
+  background: rgba(240, 252, 255, .88);
+  border-color: #67cce6;
+  color: #07558a;
+}
+
+.btn.ghost.dark {
+  border-color: #43bcd9;
+}
+
+/* Statistik kelas */
+.quick-stats strong {
+  color: #07558a;
+}
+
+.quick-stats span {
+  color: #376b86;
+}
+
+/* Kartu lambang 8A */
+.hero-card {
+  background: linear-gradient(
+    145deg,
+    rgba(241, 253, 255, .94),
+    rgba(168, 229, 248, .94)
+  );
+  border-color: rgba(13, 111, 157, .8);
+}
+
+.hero-card:before,
+.hero-card:after {
+  border-color: rgba(7, 85, 138, .35);
+}
+
+.seal {
+  border-color: #07558a;
+  outline-color: #51c8e5;
+  color: #07558a;
+}
+
+.hero-card h3 {
+  color: #07558a;
+}
+
+.hero-card span {
+  color: #376b86;
+}
+
+/* Judul setiap bagian */
+.section-heading h2 {
+  color: #064b80;
+}
+
+.section-heading h2 em {
+  color: #078bb7;
+}
+
+/* Kartu informasi */
+.paper-card {
+  background: rgba(242, 252, 255, .94);
+  border-color: #9adced;
+  box-shadow: 0 12px 30px rgba(0, 65, 110, .09);
+}
+
+.paper-card.highlight,
+.vision-card {
+  background: linear-gradient(135deg, #064777, #087da5);
+  color: #effcff;
+  border-color: #43cce9;
+}
+
+.icon,
+.number {
+  color: #078bb7;
+}
+
+/* Pencarian dan kartu siswa */
+.search-wrap {
+  background: rgba(242, 252, 255, .96);
+  border-color: #8eddf0;
+}
+
+.search-wrap span {
+  color: #087ca5;
+}
+
+.search-wrap input {
+  color: #062b49;
+}
+
+.student-card {
+  background: rgba(242, 252, 255, .95);
+  border-color: #a1dceb;
+  color: #062b49;
+}
+
+.student-card:hover {
+  border-color: #32badb;
+  box-shadow: 0 12px 25px rgba(0, 75, 125, .15);
+}
+
+.student-no,
+.arrow {
+  color: #078bb7;
+}
+
+.student-avatar,
+.modal-avatar {
+  background: linear-gradient(135deg, #07558a, #12a7c9);
+  color: white;
+}
+
+.student-info strong {
+  color: #07558a;
+}
+
+.student-info small {
+  color: #53788b;
+}
+
+/* Jadwal piket */
+.piket-frame {
+  background: #07558a;
+}
+
+/* Visi dan misi */
+.vision-card .quote {
+  color: rgba(160, 240, 255, .2);
+}
+
+.vision-card small {
+  color: #a8f1ff;
+}
+
+.mission-grid h3 {
+  color: #07558a;
+}
+
+.motto {
+  background: rgba(240, 252, 255, .85);
+  border-color: #8eddf0;
+}
+
+.motto span,
+.motto em {
+  color: #078bb7;
+}
+
+.motto h3 {
+  color: #064b80;
+}
+
+/* Struktur organisasi */
+.org-board {
+  background: rgba(242, 252, 255, .94);
+  border-color: #8eddf0;
+}
+
+.org-node {
+  background: #e1f7ff;
+  border-color: #69cbe5;
+  color: #07558a;
+}
+
+.org-node strong {
+  color: #087da5;
+}
+
+.org-node.main {
+  background: #07558a;
+  color: white;
+  border-color: #07558a;
+}
+
+.org-node.featured {
+  background: #bcefff;
+  border-color: #32badb;
+}
+
+.org-node.featured strong {
+  color: #064b80;
+}
+
+.org-line,
+.org-row:before {
+  background: #69cbe5;
+}
+
+.org-divider {
+  color: #078bb7;
+}
+
+/* Galeri foto: foto-foto tidak diubah */
+.gallery-item {
+  background: #07558a;
+}
+
+/* Bagian jelajahi kelas */
+.explore-card {
+  background: linear-gradient(135deg, #d8f6ff, #a8e8fa);
+  border-color: #65cce8;
+}
+
+.explore-card h2 {
+  color: #064b80;
+}
+
+.explore-card > p:not(.eyebrow) {
+  color: #275b78;
+}
+
+/* Footer */
+footer {
+  background: #032b50;
+  color: #dff8ff;
+}
+
+.footer-brand {
+  color: #91ecff;
+}
+
+footer span {
+  color: #9bd0e0;
+}
+
+.creator-credit {
+  color: #dff8ff;
+}
+
+/* Popup biodata siswa */
+.modal {
+  background: rgba(0, 26, 54, .75);
+}
+
+.modal-box {
+  background: #effbff;
+  border-color: #07558a;
+}
+
+.modal-close,
+.modal-box h2 {
+  color: #07558a;
+}
+
+.modal-number {
+  color: #078bb7;
+}
+
+.modal-box #modalNick {
+  color: #376b86;
+}
+
+/* Menu HP */
+@media (max-width: 820px) {
+  nav {
+    background: #032b50;
+  }
+}
