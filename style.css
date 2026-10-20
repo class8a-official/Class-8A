@@ -1204,3 +1204,63 @@ a {
     opacity: 1 !important;
   }
 }
+/* ===== MEMPERJELAS STATISTIK KELAS 8A ===== */
+
+.stats strong,
+.stats span,
+.stat strong,
+.stat span,
+.hero .stats strong,
+.hero .stats span {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  text-shadow: 0 2px 8px rgba(0, 25, 60, 0.9);
+}
+
+/* Angka statistik */
+.stats strong,
+.stat strong,
+.hero .stats strong,
+.hero .stat strong {
+  color: #9cf4ff !important;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+/* Keterangan di bawah angka */
+.stats span,
+.stat span,
+.hero .stats span,
+.hero .stat span {
+  color: #ffffff !important;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* Latar statistik agar kontras */
+.stats,
+.stat {
+  background: rgba(2, 43, 78, 0.78);
+  border-radius: 14px;
+  padding: 10px;
+}
+
+/* Ukuran untuk HP */
+@media (max-width: 768px) {
+  .stats strong,
+  .stat strong,
+  .hero .stats strong,
+  .hero .stat strong {
+    font-size: 28px;
+    color: #9cf4ff !important;
+  }
+
+  .stats span,
+  .stat span,
+  .hero .stats span,
+  .hero .stat span {
+    color: #ffffff !important;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+}
