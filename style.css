@@ -1320,3 +1320,52 @@ a {
     letter-spacing:1px;
   }
 }
+
+/* PERBAIKAN KONTRAS KHUSUS HP */
+@media (max-width: 768px) {
+  body {
+    color: #f4fcff;
+  }
+
+  .hero h1,
+  .hero h1 span,
+  .hero h2,
+  .hero h3,
+  .hero p,
+  .hero .eyebrow,
+  .section h1,
+  .section h2,
+  .section h3,
+  .section p,
+  .section .eyebrow {
+    color: #f4fcff !important;
+    text-shadow: 0 2px 5px rgba(0, 25, 55, 0.8) !important;
+  }
+
+  .hero .eyebrow,
+  .section .eyebrow {
+    color: #9ff3ff !important;
+  }
+
+  /* Kartu nama siswa */
+  [class*="student"] {
+    color: #f4fcff;
+  }
+
+  [class*="student"] h2,
+  [class*="student"] h3,
+  [class*="student"] p,
+  [class*="student"] span,
+  [class*="student"] strong,
+  [class*="student"] a {
+    color: #f4fcff !important;
+    text-shadow: 0 1px 3px rgba(0, 25, 55, 0.65);
+  }
+
+  /* Statistik dan teks kecil */
+  [class*="stat"] *,
+  .hero .stats * {
+    color: #eafaff !important;
+    text-shadow: 0 1px 4px rgba(0, 25, 55, 0.8);
+  }
+}
