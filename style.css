@@ -6,8 +6,42 @@
 }
 html{scroll-behavior:smooth}
 body{font-family:"DM Sans",sans-serif;color:var(--dark);background:#efe1c7;line-height:1.65;overflow-x:hidden}
-.bg-photo{position:fixed;inset:0;background:url("background.jpg") center/cover no-repeat;filter:blur(3px);transform:scale(1.035);z-index:-3}
-.bg-overlay{position:fixed;inset:0;background:rgba(248,240,223,.78);z-index:-2}
+
+/* Background lautan Class 8A */
+.bg-photo {
+  position: fixed;
+  inset: 0;
+  background-image: url("laut-pc.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: none;
+  transform: none;
+  z-index: -3;
+  pointer-events: none;
+}
+
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 45, 90, 0.22),
+    rgba(0, 35, 75, 0.48)
+  );
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* Background khusus HP */
+@media (max-width: 768px) {
+  .bg-photo {
+    background-image: url("laut-hp.jpg");
+    background-position: center top;
+    background-size: cover;
+  }
+}
+
 body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;z-index:-1;background-image:radial-gradient(#5a321f .55px,transparent .55px);background-size:8px 8px}
 a{text-decoration:none;color:inherit}
 .navbar{position:fixed;top:0;left:0;right:0;height:74px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;background:rgba(45,25,16,.88);backdrop-filter:blur(14px);color:white;z-index:100;border-bottom:1px solid rgba(255,255,255,.12)}
