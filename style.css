@@ -505,3 +505,72 @@ footer span {
     background: #032b50;
   }
 }
+
+/* ==================================
+   BACKGROUND LAUT RESPONSIF CLASS 8A
+   ================================== */
+
+/* Background laptop dan komputer */
+body {
+  background-color: #003b62;
+  background-image:
+    linear-gradient(
+      rgba(0, 35, 70, 0.25),
+      rgba(0, 25, 55, 0.45)
+    ),
+    url("laut-pc.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Tulisan agar lebih mudah dibaca */
+.hero h1,
+.hero h2,
+.hero p {
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 20, 50, 0.85);
+}
+
+/* Kartu transparan seperti kaca laut */
+.card,
+.student-card,
+.modal-box {
+  background: rgba(0, 70, 115, 0.78);
+  border: 1px solid rgba(100, 235, 255, 0.65);
+  color: #ffffff;
+  box-shadow: 0 0 18px rgba(0, 200, 255, 0.18);
+}
+
+/* Tombol biru laut bercahaya */
+button,
+.btn {
+  border: 1px solid #71edff;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #00cfff, #0879d9);
+  color: #ffffff;
+  box-shadow: 0 5px 18px rgba(0, 190, 255, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 24px rgba(0, 220, 255, 0.65);
+}
+
+/* Background khusus HP */
+@media (max-width: 768px) {
+  body {
+    background-image:
+      linear-gradient(
+        rgba(0, 35, 70, 0.25),
+        rgba(0, 25, 55, 0.45)
+      ),
+      url("laut-hp.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
