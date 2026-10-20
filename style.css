@@ -1026,3 +1026,181 @@ button:hover,
     transition: none;
   }
 }
+/* ==================================
+   OCEAN THEME - READABLE TEXT FIX
+   ================================== */
+
+:root {
+  --brown: #073b63;
+  --brown2: #075985;
+  --cream: #eafaff;
+  --paper: #073b63;
+  --gold: #7cecff;
+  --dark: #f2fbff;
+  --muted: #d2efff;
+  --line: #63cfe8;
+}
+
+/* Warna teks umum */
+body {
+  color: #f2fbff !important;
+}
+
+/* Judul dan teks utama */
+h1, h2, h3, h4, h5, h6 {
+  color: #eafaff;
+  text-shadow: 0 2px 8px rgba(0, 25, 60, 0.65);
+}
+
+/* Paragraf dan deskripsi */
+p, li, label {
+  color: #e4f6ff;
+}
+
+/* Judul besar berwarna laut */
+.hero h1,
+.hero h1 span {
+  color: #a5f2ff;
+  text-shadow: 2px 3px 0 #075985;
+}
+
+/* Judul kecil di atas bagian */
+.eyebrow {
+  color: #8df0ff !important;
+}
+
+/* Kartu informasi */
+.card,
+.student-card,
+.org-card,
+.stat-card {
+  color: #f2fbff;
+}
+
+/* Teks di dalam kartu */
+.card h3,
+.card h4,
+.card p,
+.student-card strong,
+.student-card b,
+.student-card small,
+.org-card strong,
+.org-card p {
+  color: #f2fbff !important;
+  opacity: 1 !important;
+}
+
+/* Kartu dengan latar gelap agar teks jelas */
+.student-card,
+.org-card,
+.card {
+  background: rgba(3, 40, 73, 0.96);
+  border-color: #63dff5;
+}
+
+/* Statistik */
+.stats,
+.stats strong,
+.stats span,
+.stat,
+.stat strong,
+.stat span {
+  color: #eafaff !important;
+}
+
+/* Navigasi */
+.navbar {
+  color: #ffffff;
+}
+
+.navbar a {
+  color: #f2fbff;
+}
+
+/* Tombol */
+button,
+.btn {
+  opacity: 1;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #08b9df, #0875c9);
+  color: #ffffff !important;
+}
+
+.btn.ghost {
+  background: #eafaff;
+  color: #06456e !important;
+}
+
+/* Pencarian */
+input,
+textarea,
+select {
+  color: #073b63;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #52778b;
+  opacity: 1;
+}
+
+/* Footer */
+footer,
+footer p,
+footer span {
+  color: #eafaff;
+}
+
+/* Modal biodata siswa */
+.modal,
+.modal-box {
+  color: #f2fbff;
+}
+
+.modal-box h2,
+.modal-box h3,
+.modal-box p,
+.modal-box span,
+.modal-box label {
+  color: #f2fbff !important;
+}
+
+/* Tautan */
+a {
+  transition: color 0.2s ease;
+}
+
+/* Khusus layar HP */
+@media (max-width: 768px) {
+  body {
+    color: #f2fbff !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #eafaff !important;
+  }
+
+  p, li, label {
+    color: #e4f6ff;
+  }
+
+  .student-card,
+  .org-card,
+  .card {
+    background: rgba(3, 40, 73, 0.97) !important;
+  }
+
+  .student-card strong,
+  .student-card b,
+  .student-card small,
+  .org-card strong,
+  .org-card p,
+  .card h3,
+  .card h4,
+  .card p {
+    color: #f2fbff !important;
+    opacity: 1 !important;
+  }
+}
